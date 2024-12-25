@@ -1,5 +1,5 @@
-# NAME: Rithish.R.
-# REG NO: 24900403.
+# NAME: PRADEEP.B
+# REG NO: 24900484
 # EXPERIMENT - 6: SERIAL IN SERIAL OUT.
 
 # AIM:
@@ -51,16 +51,38 @@ Verify the Results. Compare the simulated results with the truth table for a SIS
 # PROGRAM:
 
 module SISO(clk, sin, q);
+
+
 input clk;
+
+
 input sin;
+
+
 output reg[3:0] q;
+
+
 always @(posedge clk)
+
+
 begin
+
+
 q[0] <= sin;
+
+
 q[1] <= q[0];
+
+
 q[2] <= q[1];
+
+
 q[3] <= q[2];
+
+
 end
+
+
 endmodule
 
 
